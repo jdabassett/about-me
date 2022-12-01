@@ -168,6 +168,14 @@ function question_7()
 }
 
 
+//fuctions calls
+question_1();
+question_2();
+question_3();
+question_4();
+question_5();
+question_6();
+question_7();
 
 
 // personalized message at the end
