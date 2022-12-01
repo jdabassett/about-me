@@ -142,28 +142,31 @@ function question_6()
 
 
 //question 7
-function question_7(){}
-let questionSevenArray = [3,7,11];
-let questionSevenAttempts = 6;
- 
-do {
-  let questionSeven = prompt(`Can you guess one of Jacob\'s favorite prime numbers? You have ${questionSevenAttempts} guesses left.`);
+function question_7()
+{
+  let questionSevenArray = [3,7,11];
+  let questionSevenAttempts = 6;
+  
+  do {
+    let questionSeven = prompt(`Can you guess one of Jacob\'s favorite prime numbers? You have ${questionSevenAttempts} guesses left.`);
 
-  let questionSevenIndex = questionSevenArray.indexOf(parseInt(questionSeven));
+    let questionSevenIndex = questionSevenArray.indexOf(parseInt(questionSeven));
 
-  if (questionSevenIndex>=0){
-    alert(`You got it. My favorite primers are ${questionSevenArray}`);
-    userCorrectAnswers++;
-    break;
-  } else if (questionSevenAttempts > 1){
-    alert('You are soo close, keep guessing.');
-  } else if (questionSevenAttempts===1){
-    alert(`Nice try but my favorite primers are ${questionSevenArray}!`);
-  }
+    if (questionSevenIndex>=0){
+      alert(`You got it. My favorite primers are ${questionSevenArray}`);
+      userCorrectAnswers++;
+      break;
+    } else if (questionSevenAttempts > 1){
+      alert('You are soo close, keep guessing.');
+    } else if (questionSevenAttempts===1){
+      alert(`Nice try but my favorite primers are ${questionSevenArray}!`);
+    }
 
-  questionSevenAttempts--;
+    questionSevenAttempts--;
 
-} while (questionSevenAttempts>0);
+  } while (questionSevenAttempts>0);
+}
+
 
 
 
