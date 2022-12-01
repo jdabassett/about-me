@@ -119,7 +119,6 @@ while (questionSixAttempts > 0) {
 
 //question 7
 let questionSevenArray = [3,7,11];
-let questionSevenString = questionSevenArray.join(',');
 let questionSevenAttempts = 6;
  
 do {
@@ -128,13 +127,13 @@ do {
   let questionSevenIndex = questionSevenArray.indexOf(parseInt(questionSeven));
 
   if (questionSevenIndex>=0){
-    alert(`You got it. My favorit primer are ${questionSevenString}`);
+    alert(`You got it. My favorite primers are ${questionSevenArray}`);
     userCorrectAnswers++;
     break;
   } else if (questionSevenAttempts > 1){
     alert('You are soo close, keep guessing.');
   } else if (questionSevenAttempts===1){
-    alert(`Nice try but my favorite primers are ${questionSevenString}!`);
+    alert(`Nice try but my favorite primers are ${questionSevenArray}!`);
   }
 
   questionSevenAttempts--;
