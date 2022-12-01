@@ -15,3 +15,9 @@ MIT License
 ## Contributors
 
 Jacob Bassett
+
+12/1/22
+Driver: Marco V.
+Navigator: Jacob
+
+refactoring if statements into funcitons

@@ -9,38 +9,47 @@ alert(`Welcome to my website ${userName}! Do me a favor, please answer the follo
 
 
 //question 1
-let questionOne = prompt('Does Jacob own a hamster?').toLowerCase();
+function question_1()
+{
+  let questionOne = prompt('Does Jacob own a hamster?').toLowerCase();
 
-if (questionOne === 'yes' || questionOne === 'y') {
-  /* console.log('No, I don\'t own a hamster. But they are so cute that I am reevaluating my life choices as I write this.'); */
-  alert('You are wrong! I don\'t own a hamster. But they are so cute that I am re-evaluating my life choices as I write this.');
-} else if (questionOne === 'no' || questionOne === 'n') {
-  /* console.log('Yes, I am a lonely sidewinder who live with cats.') */
-  alert('You are right! I am a lonely sidewinder who lives with cats.');
-  userCorrectAnswers++;
-} else {
-  /* console.log('Didn't get that. questionOne')*/
-  alert('Sorry, I didn\'t understand that response. Please be sure to answer with a yes or no.');
+  if (questionOne === 'yes' || questionOne === 'y') {
+    /* console.log('No, I don\'t own a hamster. But they are so cute that I am reevaluating my life choices as I write this.'); */
+    alert('You are wrong! I don\'t own a hamster. But they are so cute that I am re-evaluating my life choices as I write this.');
+  } else if (questionOne === 'no' || questionOne === 'n') {
+    /* console.log('Yes, I am a lonely sidewinder who live with cats.') */
+    alert('You are right! I am a lonely sidewinder who lives with cats.');
+    userCorrectAnswers++;
+  } else {
+    /* console.log('Didn't get that. questionOne')*/
+    alert('Sorry, I didn\'t understand that response. Please be sure to answer with a yes or no.');
+  }
 }
+
 
 
 //question 2
-let questionTwo = prompt('Does Jacob have a ginger beard?').toLowerCase();
+function question_2()
+{
+  let questionTwo = prompt('Does Jacob have a ginger beard?').toLowerCase();
 
-if (questionTwo === 'yes' || questionTwo === 'y') {
-  /* console.log('Why yes he does! questionTwo'); */
-  alert('You are right! Thats nice of you to notice!');
-  userCorrectAnswers++;
-} else if (questionTwo === 'no' || questionTwo === 'n') {
-  /* console.log('No, Jacob most definitely has a beard.') */
-  alert('You are wrong! Jacob most definitely has a ginger beard. What else would you call that cookie duster?');
-} else {
-  /* console.log('Didn't get that. questionTwo')*/
-  alert('Sorry, I didn\'t understand that response. Please be sure to answer with a yes or no.');
+  if (questionTwo === 'yes' || questionTwo === 'y') {
+    /* console.log('Why yes he does! questionTwo'); */
+    alert('You are right! Thats nice of you to notice!');
+    userCorrectAnswers++;
+  } else if (questionTwo === 'no' || questionTwo === 'n') {
+    /* console.log('No, Jacob most definitely has a beard.') */
+    alert('You are wrong! Jacob most definitely has a ginger beard. What else would you call that cookie duster?');
+  } else {
+    /* console.log('Didn't get that. questionTwo')*/
+    alert('Sorry, I didn\'t understand that response. Please be sure to answer with a yes or no.');
+  }
 }
 
 
+
 //question3
+function question_3(){}
 let questionThree = prompt('Does Jacob enjoy chocolate milk shakes?').toLowerCase();
 
 if (questionThree === 'yes' || questionThree === 'y') {
