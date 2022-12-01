@@ -89,20 +89,23 @@ function question_4()
 
 
 //question5
-function question_5(){}
-let questionFive = prompt('Does Jacob like the 1994 animated movie, The Lion King?').toLowerCase();
+function question_5()
+{
+  let questionFive = prompt('Does Jacob like the 1994 animated movie, The Lion King?').toLowerCase();
 
-if (questionFive === 'yes' || questionFive === 'y') {
-  /* console.log('You are wrong. Jacob doesn\'t care one way or the other about The Lion King.'); */
-  alert('You are wrong. Jacob doesn\'t care one way or the other about The Lion King.');
-} else if (questionFive === 'no' || questionFive === 'n') {
-  /* console.log('You are right. Jacob doesn\'t care one way or the other about The Lion King.') */
-  alert('You are right. Jacob doesn\'t care one way or the other about The Lion King.');
-  userCorrectAnswers++;
-} else {
-  /* console.log('')*/
-  alert('Sorry, I didn\'t understand that response. Please be sure to answer with a yes or no.');
+  if (questionFive === 'yes' || questionFive === 'y') {
+    /* console.log('You are wrong. Jacob doesn\'t care one way or the other about The Lion King.'); */
+    alert('You are wrong. Jacob doesn\'t care one way or the other about The Lion King.');
+  } else if (questionFive === 'no' || questionFive === 'n') {
+    /* console.log('You are right. Jacob doesn\'t care one way or the other about The Lion King.') */
+    alert('You are right. Jacob doesn\'t care one way or the other about The Lion King.');
+    userCorrectAnswers++;
+  } else {
+    /* console.log('')*/
+    alert('Sorry, I didn\'t understand that response. Please be sure to answer with a yes or no.');
+  }
 }
+
 
 
 //question6 
