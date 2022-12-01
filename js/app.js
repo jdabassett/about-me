@@ -109,33 +109,36 @@ function question_5()
 
 
 //question6 
-function question_6(){}
-let questionSixAnswer = Math.floor(Math.random()*11);
-let questionSixAttempts = 4;
+function question_6()
+{
+  let questionSixAnswer = Math.floor(Math.random()*11);
+  let questionSixAttempts = 4;
 
-while (questionSixAttempts > 0) {
+  while (questionSixAttempts > 0) {
 
-  //prompt for guess
-  let questionSix = prompt(`I'm thinking of an integer between 0 and 10, inclusive. Can you guess the number? You have ${questionSixAttempts} guesses left.`);
+    //prompt for guess
+    let questionSix = prompt(`I'm thinking of an integer between 0 and 10, inclusive. Can you guess the number? You have ${questionSixAttempts} guesses left.`);
 
-  questionSixAttempts--;
-  
-  //checking if user quess right
-  if (questionSix == questionSixAnswer) {
-    alert(`You are correct! The answer was ${questionSixAnswer}`);
-    userCorrectAnswers++;
-    break;
-  } else if (questionSixAttempts >= 1 && questionSix > questionSixAnswer){
-    alert('Close, guess a little lower!');
-    continue;
-  } else if (questionSixAttempts >= 1 && questionSix < questionSixAnswer){
-    alert('Close, guess a little higher!');
-    continue;
-  } else if (questionSixAttempts === 0) {
-    alert(`So close, but the answer was ${questionSixAnswer}`);
-    break;
+    questionSixAttempts--;
+    
+    //checking if user quess right
+    if (questionSix == questionSixAnswer) {
+      alert(`You are correct! The answer was ${questionSixAnswer}`);
+      userCorrectAnswers++;
+      break;
+    } else if (questionSixAttempts >= 1 && questionSix > questionSixAnswer){
+      alert('Close, guess a little lower!');
+      continue;
+    } else if (questionSixAttempts >= 1 && questionSix < questionSixAnswer){
+      alert('Close, guess a little higher!');
+      continue;
+    } else if (questionSixAttempts === 0) {
+      alert(`So close, but the answer was ${questionSixAnswer}`);
+      break;
+    }
   }
 }
+
 
 
 //question 7
