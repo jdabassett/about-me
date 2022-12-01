@@ -49,20 +49,23 @@ function question_2()
 
 
 //question3
-function question_3(){}
-let questionThree = prompt('Does Jacob enjoy chocolate milk shakes?').toLowerCase();
+function question_3()
+{
+  let questionThree = prompt('Does Jacob enjoy chocolate milk shakes?').toLowerCase();
 
-if (questionThree === 'yes' || questionThree === 'y') {
-  /* console.log('Why yes he does! questionThree'); */
-  alert('You are right! Expecially after a workout.');
-  userCorrectAnswers++;
-} else if (questionThree === 'no' || questionThree === 'n') {
-  /* console.log('You are wrong, Jacob loves chocolate milkshakes.') */
-  alert('You are wrong! Jacob loves chocolate milkshakes');
-} else {
-  /* console.log('Didn't get that. questionThree')*/
-  alert('Sorry, I didn\'t understand that response. Please be sure to answer with a yes or no.');
+  if (questionThree === 'yes' || questionThree === 'y') {
+    /* console.log('Why yes he does! questionThree'); */
+    alert('You are right! Expecially after a workout.');
+    userCorrectAnswers++;
+  } else if (questionThree === 'no' || questionThree === 'n') {
+    /* console.log('You are wrong, Jacob loves chocolate milkshakes.') */
+    alert('You are wrong! Jacob loves chocolate milkshakes');
+  } else {
+    /* console.log('Didn't get that. questionThree')*/
+    alert('Sorry, I didn\'t understand that response. Please be sure to answer with a yes or no.');
+  }
 }
+
 
 
 //question4
