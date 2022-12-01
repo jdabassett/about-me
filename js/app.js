@@ -69,22 +69,27 @@ function question_3()
 
 
 //question4
-let questionFour = prompt('Is Jacob\'s favorite color pink?').toLowerCase();
+function question_4()
+{
+  let questionFour = prompt('Is Jacob\'s favorite color pink?').toLowerCase();
 
-if (questionFour === 'yes' || questionFour === 'y') {
-  /* console.log('You are right. Pink is one of Jacob\'s favorite colors.'); */
-  alert('You are right. Pink is one of Jacob\'s favorite colors.');
-  userCorrectAnswers++;
-} else if (questionFour === 'no' || questionFour === 'n') {
-  /* console.log('You are wrong. Jacob is partial to pink.') */
-  alert('You are wrong. Jacob is partial to pink.');
-} else {
-  /* console.log('Didn't get that. questionFour')*/
-  alert('Sorry, I didn\'t understand that response. Please be sure to answer with a yes or no.');
+  if (questionFour === 'yes' || questionFour === 'y') {
+    /* console.log('You are right. Pink is one of Jacob\'s favorite colors.'); */
+    alert('You are right. Pink is one of Jacob\'s favorite colors.');
+    userCorrectAnswers++;
+  } else if (questionFour === 'no' || questionFour === 'n') {
+    /* console.log('You are wrong. Jacob is partial to pink.') */
+    alert('You are wrong. Jacob is partial to pink.');
+  } else {
+    /* console.log('Didn't get that. questionFour')*/
+    alert('Sorry, I didn\'t understand that response. Please be sure to answer with a yes or no.');
+  }
 }
 
 
+
 //question5
+function question_5(){}
 let questionFive = prompt('Does Jacob like the 1994 animated movie, The Lion King?').toLowerCase();
 
 if (questionFive === 'yes' || questionFive === 'y') {
@@ -101,6 +106,7 @@ if (questionFive === 'yes' || questionFive === 'y') {
 
 
 //question6 
+function question_6(){}
 let questionSixAnswer = Math.floor(Math.random()*11);
 let questionSixAttempts = 4;
 
@@ -130,6 +136,7 @@ while (questionSixAttempts > 0) {
 
 
 //question 7
+function question_7(){}
 let questionSevenArray = [3,7,11];
 let questionSevenAttempts = 6;
  
